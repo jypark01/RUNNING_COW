@@ -200,7 +200,7 @@ document.getElementById('refreshButton').addEventListener('click', function() {
     });
     function categorizeTabs() {
         grouped = true;
-        const apiKey = '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'; // Replace with your OpenAI API key
+        const apiKey = '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'; // Replace with your OpenAI API key
         const apiUrl = 'https://api.openai.com/v1/chat/completions';
         
             chrome.tabs.query({}, function(tabs) {
