@@ -1,0 +1,180 @@
+/* Add any necessary styling */
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Noto Sans Korean';
+}
+
+html{
+    max-height: 250px;
+    border-radius: 10px;
+}
+
+body{
+    margin: 0;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    max-height: 500px;
+    /* border: 1px red solid; */
+    background-color: rgb(246,246,246);
+}
+
+#searchbar_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px 10px 0 10px;
+}
+
+#running_cow{
+    width: 25%;
+}
+
+
+#Search{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 26%;
+    height: 25px;
+    background-color: #ffdac7;
+    border: 1.5px solid orange;
+    font-weight: bold;
+}
+
+#refreshButton{
+    width: 24%;
+    background-color: #ffdac7;
+    font-weight: bold;
+    height: 25px;
+    border: 1.5px solid orange;
+    margin: 0 -3px;
+}
+
+#Search:hover,#refreshButton:hover{
+    cursor:pointer;
+    background-color: #ff9966;
+    transition: 0.5s ease;
+}
+
+#searchBar{
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color:#ffdac7;
+    border: 1.5px solid orange;
+    height: 25px;
+}
+
+.clock{
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+}
+
+.tab-icon {
+    width: 16px;
+    height: 16px;
+}
+
+#tabsList {
+    width: 95%; /* Ensures the container takes the full width */
+    /* max-width: 400px; Limit the maximum width */
+    padding: 10px 20px 10px 20px; /* Add padding for spacing */
+    overflow-y: auto;
+    margin: auto;
+    max-height: 75%;
+    border-radius: 15px;
+    background-color:#ffefe6;
+    border: 1.5px solid orange;
+}
+
+.tab_section {
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+    padding: 3px 0 3px 0;
+}
+
+.tab_section:not(:last-child){
+    border-bottom: 0.5px solid rgb(100,100,100);
+}
+
+.tab_section:hover{
+    background-color: #e0e0e0;
+    transition: all 0.25s ease-in;
+    cursor: pointer;
+}
+
+.tab_title{
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+    /* background-color: rgb(255,165,0,0.5); */
+    color:rgb(0,0,0);
+}
+
+/* #tabsList::-webkit-scrollbar{
+} */
+
+#categorizeBtn{
+    width: 60%;
+    height: 25px;
+    position: absolute;
+    display: inline-block;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: bold;
+    margin: auto 0;
+    top:440px;
+    right:0px;
+    left:15px;
+    bottom: 0px;
+    background-color: #ffdac7;
+    border: 1.5px solid orange;
+}
+
+#categorizeBtn:hover{
+    transition: all 0.5s ease;
+    background: #ff9966;
+    cursor: pointer;
+}
+
+#Ungroup{
+    position: absolute;
+    display: inline-block;
+    width:35%;
+    height: 25px;
+    margin: auto 0;
+    font-weight: bold;
+    top:440px;
+    right:0px;
+    left:310px;
+    bottom: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #ffdac7;
+    border: 1.5px solid orange;
+}
+
+#Ungroup:hover{
+    transition: all 0.5s ease;
+    background: #ff9966;
+    cursor: pointer;
+}
+
+.categoryInfo{
+    font-weight: bold;
+    font-size: larger;
+    background-color: aqua;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: solid 1.5px blue;
+}
+
+
+.selected {
+    background-color: #e0e0e0; /* Change background color when selected */
+}
